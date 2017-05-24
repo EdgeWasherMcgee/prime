@@ -37,9 +37,9 @@ void prime(int len){
 				printf("\n");
 			}
 		}
-		//if (y == len - 1){
-			//printf("%d", floor(log(len) * len / y));
-		//}
+		if (y == len - 1){
+			printf("%d", floor(log(len) * len / y));
+		}
 		delserie(tally, list_len, y);
 	}
 	printf("\n");
