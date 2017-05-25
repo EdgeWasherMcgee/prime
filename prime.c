@@ -31,15 +31,15 @@ void prime(int len){
 			delserie(tally, list_len, y);
 		}
 		y = next_prime(tally, y + 1);
-		if (z > len/2){
+		//if (z > len/2){
 		printf("%d, ", y);
-			if (z % 20 == 0){
-				printf("\n");
-			}
-		}
-		if (y == len - 1){
-			printf("%d", floor(log(len) * len / y));
-		}
+		//	if (z % 20 == 0){
+		//		printf("\n");
+		//	}
+		//}
+		//if (y == len - 1){
+		//	printf("%d", floor(log(len) * len / y));
+		//}
 		delserie(tally, list_len, y);
 	}
 	printf("\n");
