@@ -18,7 +18,7 @@ int next_prime(char tally[], int y){
 }	
 void prime(int len){
 	int primes[len];
-	int list_len = len * log(len) * 3.14159265;
+	int list_len = len * log(len) * 1.5;
 	char tally[list_len];
 	printf("2, ");
 	for (int x = 0; x < list_len; x++){
@@ -33,9 +33,9 @@ void prime(int len){
 		y = next_prime(tally, y + 1);
 		//if (z > len/2){
 		printf("%d, ", y);
-		//	if (z % 20 == 0){
-		//		printf("\n");
-		//	}
+		if (z % 15 == 0){
+			printf("\n");
+		}
 		//}
 		//if (y == len - 1){
 		//	printf("%d", floor(log(len) * len / y));
